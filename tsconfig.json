@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "paths": {
+      "@components":["./src/ui/components/*"],
+      "@api":["./src/api/*"],
+      "@pages":["./src/ui/pages/*"],
+      "@utils":["./src/utils/*"]
+    }
+  },
+  "include": ["src"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
