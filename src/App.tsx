@@ -1,5 +1,3 @@
-import React from 'react'
-
 import View from './ui/components/View'
 import Text from './ui/components/Text'
 import Form from './ui/components/Form'

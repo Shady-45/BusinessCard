@@ -22,10 +22,7 @@ const Form = () => {
             <form onSubmit={methods.handleSubmit(onSub)} >
             <ValidateInput inputLabel='Name' inputType='text' maxLength={30} validations={_NAME_VALIDATIONS} errorTextColor='danger' />
             <ValidateInput inputLabel='Email' inputType='email' validations={_EMAIL_VALIDATIONS} errorTextColor='danger' />
-            <ValidateInput inputLabel='Phone' inputType='text' maxLength={10} validations={_PHONE_NUMBER_VALIDATIONS} errorTextColor='danger' onInput={(e) => {
-              <input onChange={(e)=>{}} / >
-    e.target.value = e.target.value.replace(/[^0-9]/g, '');
-  }} />
+            <ValidateInput inputLabel='Phone' inputType='text' maxLength={10} validations={_PHONE_NUMBER_VALIDATIONS} errorTextColor='danger' onInput={(e: React.ChangeEvent<HTMLInputElement>)=>{e.target.value = e.target.value.replace(/[^0-9]/g, '');}} / >
             <ValidateInput inputLabel='Organization' inputType='text' validations={_ORGANIZTION_VALIDATIONS} errorTextColor='danger' />
             <ValidateInput inputLabel='Designation' inputType='text' validations={_DESIGNATION_VALIDATIONS} errorTextColor='danger' />
             <ValidateInput inputLabel='image' inputType='file' validations={_IMAGE_VALIDATIONS} errorTextColor='danger' /> 

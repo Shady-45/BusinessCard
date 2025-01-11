@@ -2,7 +2,7 @@ import React from 'react'
 import { TextProps } from '../../models'
 import { colorClasses, sizeClasses } from '../../utils'
 
-const Text:React.FC<TextProps> = ({color,fontSize,text,textType}) => {
+const Text:React.FC<TextProps> = ({color,fontSize,text}) => {
   const ApplyTextClass = ()=>{
     return `${colorClasses[color]} ${sizeClasses[fontSize]}`
   }
